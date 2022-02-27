@@ -59,7 +59,7 @@ const Navbar = (props) => {
               </NavLink>
             </NavItem>
             <NavItem className="link-btn">
-              <NavLink href="https://github.com/GaryChen513/seatify">
+              <NavLink href="https://github.com/GaryChen513/Seatify_2022">
                 GitHub
               </NavLink>
             </NavItem>
