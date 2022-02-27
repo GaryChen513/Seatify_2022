@@ -43,18 +43,18 @@ const Book = (props) => {
 
   const getCurrentDate = () => {
     const dater = new Date();
-
-    const date =
-      dater.getDate() + "/" + dater.getMonth() + "/" + dater.getFullYear();
+    const month = dater.getMonth() + 1;
+    const date = dater.getDate() + "/" + month + "/" + dater.getFullYear();
 
     return [date];
   };
 
   return (
     <div className="booking-block">
-
       <Row noGutters className="text-center align-items-center seat-row ">
-        <h1 style={{color: '#294581'}} >Select the time and the floor you want!</h1>
+        <h1 style={{ color: "#294581" }}>
+          Select the time and the floor you want!
+        </h1>
       </Row>
       <Row noGutters className="text-center align-items-center seat-row ">
         <Col xs="12" sm="4">
@@ -63,7 +63,7 @@ const Book = (props) => {
             itemList={getCurrentDate()}
             setSelectedItem={setDate}
             key="date"
-            />
+          />
         </Col>
 
         <Col xs="12" sm="4">
@@ -83,7 +83,7 @@ const Book = (props) => {
         </Col>
       </Row>
 
-      <Row style = {{marginTop : 30 }}>
+      <Row style={{ marginTop: 30 }}>
         <SeatMatrix
           seats={seats}
           cur_time={cur_time}
@@ -93,10 +93,10 @@ const Book = (props) => {
         />
       </Row>
 
-      <Row style = {{marginTop : 50 }}>
+      <Row style={{ marginTop: 50 }}>
         <button
           className="book-table-btn"
-          style={{height: '50px', width : '300px'}} 
+          style={{ height: "50px", width: "300px" }}
           onClick={() => {
             props.setPage(2);
           }}
