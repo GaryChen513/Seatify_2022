@@ -1,0 +1,24 @@
+body {
+  font-family: Georgia, sans-serif;
+}
+
+.typewrite {
+  font-family: Georgia, sans-serif;
+  font-size: 2.5rem;
+  padding-bottom: 1.8%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.big-img-container {
+  padding: 10% 0;
+}
+
+@media (min-width: 768px) {
+  .big-img-container {
+    padding: 4% 0;
+  }
+}
+.big-img {
+  width: 85%;
+}

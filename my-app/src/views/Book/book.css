@@ -1,0 +1,117 @@
+body {
+  font-family: Georgia, sans-serif;
+}
+
+.seat-row {
+  padding-top: 4%;
+}
+
+.seat-booking {
+  color: #413f3d;
+  font-size: 2.5rem;
+  padding-bottom: 1.8%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.book-table-btn {
+  color: white;
+  font-size: 1.2rem;
+  padding: 2% 8%;
+  border-radius: 25px;
+  background-color: #4865a3;
+  border: 2px white solid;
+  font-family: Georgia, sans-serif;
+}
+
+.click-btn {
+  color: white;
+  font-size: 1.2rem;
+  padding: 2% 8%;
+  border-radius: 25px;
+  background-color: #4865a3;
+  border: 2px white solid;
+  font-family: Georgia, sans-serif;
+}
+
+.booking-block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c3c833d;
+  padding-bottom: 75px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 75px;
+  position: relative;
+  font-family: Georgia, sans-serif;
+}
+
+.book-table-btn:hover {
+  color: #4865a3;
+  font-weight: 600;
+  background-color: white !important;
+  border: 2px solid #4865a3 !important;
+}
+
+@media (min-width: 768px) {
+  .book-table-btn {
+    font-size: 1.4rem;
+    padding: 0.5% 5%;
+  }
+}
+
+.booking-dropdown {
+  width: 85%;
+  height: 100%;
+  /* padding: 4% 0; */
+  background-color: hsla(0, 0%, 100%, 0.842);
+  color: rgb(13, 10, 53);
+  font-family: Georgia, sans-serif;
+  font-size: 1.1rem;
+  border: 2px #4865a3 solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* .booking-dropdown:hover {
+  width: 85%;
+  padding: 4% 0;
+  margin: 2% 0;
+  font-family: Georgia, sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background-color: hsl(55, 64%, 79%);
+  color: rgb(13, 10, 53);
+} */
+
+.booking-dropdown:focus {
+  outline: none;
+  box-shadow: none;
+}
+.booking-dropdown-menu {
+  outline: none;
+}
+.booking-dropdown-item:hover {
+  background-color: white;
+}
+.booking-dropdown-item:active {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .booking-dropdown {
+    font-size: 1.2rem;
+  }
+}
+
+.reservation-error {
+  color: #c0392b;
+  font-size: 1.1rem;
+  padding-bottom: 3%;
+}

@@ -1,0 +1,49 @@
+body {
+  font-family: Georgia, sans-serif;
+}
+
+.typewrite {
+  font-family: Georgia, sans-serif;
+  font-size: 2.5rem;
+  color: #294581;
+  padding-bottom: 1.8%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.description {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c3c833d;
+  padding-bottom: 75px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 75px;
+  position: relative;
+}
+
+.column {
+  color: white;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.image {
+  vertical-align: middle;
+}
+
+.text {
+  display: "flex";
+  text-align: "center";
+}
+
+.text-p {
+  text-align: "justify";
+  color: #344f88;
+  font-size: 1.2rem;
+}

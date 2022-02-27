@@ -1,0 +1,245 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, sans-serif;
+  background: hsl(210, 6%, 87%);
+  color: #4865a3;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: #4865a3;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classes */
+
+/* section */
+.section,
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+.container {
+  text-align: center;
+  margin-top: 3rem;
+}
+.btn {
+  display: inline-block;
+  background: hsl(205, 78%, 60%);
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  color: #fff;
+  background: hsl(44, 22%, 59%);
+}
+.item {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  max-width: 450px;
+  margin: 2rem auto;
+  align-items: center;
+  border-radius: 0.25rem;
+}
+.item button,
+.item a {
+  background: transparent;
+  border-color: transparent;
+  color: hsl(205, 78%, 60%);
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+.item {
+  padding: 1rem 2rem;
+}
+.item h4 {
+  margin-bottom: 0;
+}
+.item p {
+  margin-bottom: 0;
+}
+.modal p {
+  margin-bottom: 0;
+  color: hsl(360, 67%, 44%);
+}
+.form {
+  background: #0c3c833d;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 4rem 4rem;
+  border-radius: 0.25rem;
+}
+.form input {
+  background: hsl(210, 36%, 96%);
+  border-color: transparent;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.5rem;
+}
+.form-control {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+.form button {
+  display: inline-block;
+  background: rgb(62, 93, 150);
+  color: #fff;
+  border-color: transparent;
+  margin-top: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.nav-links {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.nav-links a {
+  color: hsl(210, 22%, 49%);
+}
+.users {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem auto;
+}
+.users li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  text-align: left;
+}
+.users img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.users h4 {
+  margin-bottom: 0.15rem;
+}
+.users a {
+  color: hsl(209, 65%, 78%);
+  text-transform: capitalize;
+}
+
+.products {
+  margin: 4rem 0;
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 576px) {
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+.product {
+  background: #fff;
+  border-radius: 0.25rem;
+}
+.product img {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+.product h4 {
+  margin-top: 1rem;
+}
+
+.product button {
+  margin-bottom: 1rem;
+  background: hsl(205, 78%, 60%);
+  border-radius: 0.25rem;
+  border-color: transparent;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}

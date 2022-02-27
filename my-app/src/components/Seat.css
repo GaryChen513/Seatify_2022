@@ -1,0 +1,54 @@
+.seat {
+  width: 20px;
+  height: 20px;
+  border-radius: 50% 50% 0px 0px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.seat:hover {
+  transform: scale(1.1);
+}
+
+.seat-grey {
+  background-image: url("../images/lightgrey.png");
+}
+
+.seat-green {
+  background-image: url("../images/blue.png");
+}
+
+.seat-red {
+  background-image: url("../images/darkgrey.png");
+  cursor: auto;
+  pointer-events: none;
+}
+
+.seat-black {
+  background-color: black;
+}
+
+.seat-occupied {
+  background-image: url("../images/red.png");
+  /* background-color: black; */
+  cursor: auto;
+  pointer-events: none;
+}
+
+.floor-layout {
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+.row {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.col-md-2 {
+  padding: 0px 10px;
+}
+.col-md-6 {
+  padding: 0px 25px;
+}

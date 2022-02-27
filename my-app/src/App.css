@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+@media(max-width: 768px){
+	.main{
+		background-color: transparent;
+	}
+}
